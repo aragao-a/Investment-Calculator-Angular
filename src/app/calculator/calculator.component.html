@@ -2,35 +2,35 @@
 
     <section id="calculator">
 
-        <form>
+        <form (ngSubmit)="onSubmit(initialInvestment, annualInvestment, expectedReturn, duration)">
 
             <p>
                 <label for="field 1">INITIAL INVESTMENT</label>
-                <input type="number" id="field 1" name="field 1">
+                <input type="number" id="field 1" name="field 1" [(ngModel)]="initialInvestment">
             </p>
             
             <p>
                 <label for="field 2">ANNUAL INVESTMENT</label>
-                <input type="number" id="field 2" name="field 2">
+                <input type="number" id="field 2" name="field 2" [(ngModel)]="annualInvestment">
             </p>
 
             <p>
                 <label for="field 3">EXPECTED RETURN</label>
-                <input type="number" id="field 3" name="field 3">
+                <input type="number" id="field 3" name="field 3" [(ngModel)]="expectedReturn">
             </p>
 
             <p>
                 <label for="field 4">DURATION</label>
-                <input type="number" id="field 4" name="field 4">
+                <input type="number" id="field 4" name="field 4" [(ngModel)]="duration">
             </p>
 
+            <button type="submit">
+
+                <h1>CALCULATE</h1>
+    
+            </button>
+
         </form>
-
-        <button>
-
-            <h1>CALCULATE</h1>
-
-        </button>
 
     </section>
 

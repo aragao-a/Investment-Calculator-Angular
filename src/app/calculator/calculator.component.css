@@ -46,3 +46,10 @@ button {
     font: inherit;
     width: 100%;
 }
+
+table {
+    margin-top: 2rem;
+    display: table;
+    align-items: center;
+    justify-content: center;
+}

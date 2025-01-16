@@ -2,6 +2,31 @@
 
 <main>
 
-    <app-calculator></app-calculator>
+    <app-calculator (tableGeneration)="onTableGeneration($event)"></app-calculator>
+
+    @if (showResults) {
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>30</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>25</td>
+                    <td>Los Angeles</td>
+                </tr>
+            </tbody>
+        </table>
+    }
 
 </main>

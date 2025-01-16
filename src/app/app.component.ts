@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { CalculatorComponent } from './calculator/calculator.component';
-import { CardComponent } from "./calculator/shared/card/card.component";
 
 @Component({
   selector: 'app-root',
@@ -10,4 +9,11 @@ import { CardComponent } from "./calculator/shared/card/card.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {}
+export class AppComponent {
+
+  showResults = false;
+
+  onTableGeneration(show: boolean) {
+    this.showResults = show; 
+  }
+}
