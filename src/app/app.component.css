@@ -1,0 +1,8 @@
+main {
+
+    width: 75%;
+    max-width: 50rem;
+    margin: 2.5rem auto;
+    display: grid;
+    gap: 4rem;
+}

@@ -1,0 +1,11 @@
+div {
+
+    border-radius: 2px;
+    box-shadow: 0 1 px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: linear-gradient(
+    to bottom,
+    #236b59,
+    #24865e
+  );
+}

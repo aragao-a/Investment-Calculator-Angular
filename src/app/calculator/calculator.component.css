@@ -1,0 +1,37 @@
+#calculator {
+
+    padding: 2rem;
+    max-height: 60vh;
+}
+
+p {
+
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    font-weight: bold;
+    gap: 0.35rem;
+    
+}
+
+form {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7rem;
+}
+
+input {
+
+    width: 15rem;
+    background-color: transparent;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid;
+    color: white;
+    opacity: 70%;
+    font: inherit;
+    font-weight: normal;
+}
