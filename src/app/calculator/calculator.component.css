@@ -37,9 +37,10 @@ input {
 }
 
 button {
+    
     margin-top: 2rem;
     cursor: pointer;
-    color: black;
+    color: var(--headergrey);
     border: none;
     background-color: #73e2b4;
     font: inherit;
