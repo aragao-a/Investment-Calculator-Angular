@@ -35,3 +35,13 @@ input {
     font: inherit;
     font-weight: normal;
 }
+
+button {
+    margin-top: 2rem;
+    cursor: pointer;
+    color: black;
+    border: none;
+    background-color: #73e2b4;
+    font: inherit;
+    width: 100%;
+}
