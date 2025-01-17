@@ -1,6 +1,5 @@
 #calculator {
 
-    padding: 2rem;
     max-height: 60vh;
 }
 
@@ -20,12 +19,19 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 40rem;
+    margin: 0rem auto;
+    padding: 2rem;
     column-gap: 7rem;
+    background: linear-gradient(
+    to bottom,
+    #236b59,
+    #24865e)
 }
 
 input {
 
-    width: 15rem;
+    width: 10rem;
     background-color: transparent;
     padding: 0.8rem;
     border-radius: 4px;

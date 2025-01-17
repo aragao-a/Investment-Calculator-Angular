@@ -1,38 +1,38 @@
-<app-card>
 
-    <section id="calculator">
 
-        <form (ngSubmit)="onSubmit(initialInvestment, annualInvestment, expectedReturn, duration)">
+<section id="calculator">
 
-            <p>
-                <label for="field 1">INITIAL INVESTMENT</label>
-                <input type="number" id="field 1" name="field 1" [(ngModel)]="initialInvestment">
-            </p>
-            
-            <p>
-                <label for="field 2">ANNUAL INVESTMENT</label>
-                <input type="number" id="field 2" name="field 2" [(ngModel)]="annualInvestment">
-            </p>
+    <form (ngSubmit)="onSubmit()">
 
-            <p>
-                <label for="field 3">EXPECTED RETURN</label>
-                <input type="number" id="field 3" name="field 3" [(ngModel)]="expectedReturn">
-            </p>
+        <p>
+            <label for="field 1">INITIAL INVESTMENT</label>
+            <input type="number" id="field 1" name="field 1" [(ngModel)]="field1Value">
+        </p>
+        
+        <p>
+            <label for="field 2">ANNUAL INVESTMENT</label>
+            <input type="number" id="field 2" name="field 2" [(ngModel)]="field2Value">
+        </p>
 
-            <p>
-                <label for="field 4">DURATION</label>
-                <input type="number" id="field 4" name="field 4" [(ngModel)]="duration">
-            </p>
+        <p>
+            <label for="field 3">EXPECTED RETURN</label>
+            <input type="number" id="field 3" name="field 3" [(ngModel)]="field3Value">
+        </p>
 
-            <button type="submit">
+        <p>
+            <label for="field 4">DURATION</label>
+            <input type="number" id="field 4" name="field 4" [(ngModel)]="field4Value">
+        </p>
 
-                <h1>CALCULATE</h1>
-    
-            </button>
+        <button type="submit">
 
-        </form>
+            <h1>CALCULATE</h1>
 
-    </section>
+        </button>
 
-</app-card>
+    </form>
+
+</section>
+
+
 
