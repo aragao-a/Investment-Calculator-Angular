@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, output, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 import { InvestmentInput } from '../inv-input.model';
 
@@ -11,21 +11,21 @@ import { InvestmentInput } from '../inv-input.model';
 })
 export class CalculatorComponent {
   
-  @Output() calculate = new EventEmitter<InvestmentInput>();
+  calculate = output<InvestmentInput>();
 
-  field1Value = '0';
-  field2Value = '0';
-  field3Value = '5';
-  field4Value = '10';
+  field1Value = signal('0');
+  field2Value = signal('0');
+  field3Value = signal('5');
+  field4Value = signal('10');
 
   onSubmit() {
 
     this.calculate.emit({
 
-      initialInvestment: +this.field1Value,
-      duration: +this.field4Value, 
-      expectedReturn: +this.field3Value, 
-      annualInvestment: +this.field2Value 
+      initialInvestment: +this.field1Value(),
+      duration: +this.field4Value(), 
+      expectedReturn: +this.field3Value(), 
+      annualInvestment: +this.field2Value() 
     });
   }
 }
