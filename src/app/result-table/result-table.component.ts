@@ -1,9 +1,10 @@
+import { CurrencyPipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-result-table',
   standalone: true,
-  imports: [],
+  imports: [CurrencyPipe],
   templateUrl: './result-table.component.html',
   styleUrl: './result-table.component.css'
 })
