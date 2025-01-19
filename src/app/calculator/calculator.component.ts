@@ -27,5 +27,10 @@ export class CalculatorComponent {
       expectedReturn: +this.field3Value(), 
       annualInvestment: +this.field2Value() 
     });
+
+    this.field1Value.set('0');
+    this.field2Value.set('0');
+    this.field3Value.set('5');
+    this.field4Value.set('10');
   }
 }
